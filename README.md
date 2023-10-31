@@ -1,0 +1,1 @@
+### Cypress TS Framework template
