@@ -5,6 +5,6 @@ export default defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    baseUrl: "https://play1.automationcamp.ir"
+    baseUrl: "https://play1.automationcamp.ir",
   },
 });

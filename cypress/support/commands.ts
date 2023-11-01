@@ -25,26 +25,24 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 //
 
-export {}
+export {};
 declare global {
   namespace Cypress {
     interface Chainable {
-        /**
-         * This function authenticates user via API
-         * @param email user name
-         * @param password the password is set for the user
-         * @example
-         * // This is an example
-         * cy.loginWithAPI('test@test.com', 'Pass123456')
-         * @
-         */
-        loginWithAPI(email?: string): Chainable<void>
-
+      /**
+       * This function authenticates user via API
+       * @param email user name
+       * @param password the password is set for the user
+       * @example
+       * // This is an example
+       * cy.loginWithAPI('test@test.com', 'Pass123456')
+       * @
+       */
+      loginWithAPI(email?: string): Chainable<void>;
     }
   }
 }
 
-Cypress.Commands.add('loginWithAPI', (email: string="test@test.com") => {
-        cy.log(`Authenticating ${email} with API` )
-    });
-    
+Cypress.Commands.add("loginWithAPI", (email: string = "test@test.com") => {
+  cy.log(`Authenticating ${email} with API`);
+});
